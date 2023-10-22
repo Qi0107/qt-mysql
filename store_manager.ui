@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>store_manager</class>
+ <widget class="QMainWindow" name="store_manager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>682</width>
+    <height>386</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>系统登陆验证</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/1.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_login">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>260</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 170, 255);
+        color: white;
+        border-radius: 10px;  border: 1px white;
+        border-style: outset;
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>登录或注册</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_exit">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>310</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 170, 255);
+        color: white;
+        border-radius: 10px; border: 1px white;
+        border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>退出系统</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_findpassword">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>260</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 170, 255);
+        color: white;
+        border-radius: 10px;  border: 1px white;
+        border-style: outset;
+</string>
+    </property>
+    <property name="text">
+     <string>找回密码？</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_user">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>80</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/images/3.jpg);
+border: 2px white;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_password">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>200</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/images/3.jpg);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>80</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Agency FB&quot;;
+color: rgb(255, 255, 255);border: 1px white;</string>
+    </property>
+    <property name="text">
+     <string> 用户名</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>200</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Agency FB&quot;;
+color: rgb(255, 255, 255);border: 1px white;</string>
+    </property>
+    <property name="text">
+     <string>    密 码</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>30</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 16pt &quot;Agency FB&quot;;</string>
+    </property>
+    <property name="text">
+     <string>            仓库管理系统</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>140</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Agency FB&quot;;
+color: rgb(255, 255, 255);border: 1px white;</string>
+    </property>
+    <property name="text">
+     <string>    权 限 </string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>140</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/images/3.jpg);</string>
+    </property>
+   </widget>
+   <zorder>lineEdit_user</zorder>
+   <zorder>lineEdit_password</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>pushButton_login</zorder>
+   <zorder>pushButton_exit</zorder>
+   <zorder>pushButton_findpassword</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>comboBox</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
