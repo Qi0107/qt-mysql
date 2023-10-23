@@ -13,7 +13,9 @@
 #include<QtSql>
 #include <QLineEdit>
 #include<QWidget>
+#include <QTest>
 #include <QMenu>
+#include<QMouseEvent>
 #include<new_stock.h>
 #include"stock_system.h"
 

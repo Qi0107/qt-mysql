@@ -29,6 +29,7 @@ class stock_system : public QWidget
 public:
     explicit stock_system(QWidget *parent = nullptr);
     ~stock_system();
+    Ui::stock_system *ui;
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const;
     bool editorEvent(QEvent* event, QAbstractItemModel* model, const QStyleOptionViewItem& option, const QModelIndex& index);
 
@@ -51,6 +52,10 @@ private slots:
 
     void on_pushButton_9_clicked();
 
+    void update();
+
+    void on_pushButton_7_clicked();
+
 private:
     QPoint m_mousePoint;  // 鼠标位置
     QScopedPointer<QPushButton> m_pOpenButton;
@@ -60,7 +65,6 @@ private:
     int m_nWidth;  // 按钮宽度
     int m_nHeight;  // 按钮高度
     int m_nType;  // 按钮状态-1：划过 2：按下
-    Ui::stock_system *ui;
     QSqlTableModel *m;
     QSqlTableModel *n;
 };

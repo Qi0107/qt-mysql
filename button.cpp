@@ -1,5 +1,7 @@
 #include "button.h"
 #include "ui_button.h"
+#include "stock_system.h"
+#include "ui_stock_system.h"
 
 button::button(QWidget *parent) :
     QWidget(parent),
@@ -27,8 +29,8 @@ button::button(QWidget *parent) :
 
     connect(action3, SIGNAL(triggered()), this, SLOT(action3()));
 
-
     ui->toolButton->setMenu(menu);
+
 }
 
 button::~button()
@@ -53,6 +55,7 @@ void button::on_pushButton_clicked()
     QString changepower = QString("update user_table set power='%1' where username ='%2'").arg(x).arg(username);
     qDebug()<<changepower;
     query.exec(changepower);
+
 }
 
 void button::action(){

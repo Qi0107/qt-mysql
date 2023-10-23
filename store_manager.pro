@@ -1,4 +1,4 @@
-QT       += core gui sql
+QT       += core gui sql testlib
 
 
 
@@ -22,6 +22,7 @@ SOURCES += \
     findpassword.cpp \
     main.cpp \
     new_stock.cpp \
+    power_warnning.cpp \
     question.cpp \
     stock_system.cpp \
     store_manager.cpp \
@@ -31,6 +32,7 @@ HEADERS += \
     button.h \
     findpassword.h \
     new_stock.h \
+    power_warnning.h \
     question.h \
     stock_system.h \
     store_manager.h \
@@ -40,6 +42,7 @@ FORMS += \
     button.ui \
     findpassword.ui \
     new_stock.ui \
+    power_warnning.ui \
     question.ui \
     stock_system.ui \
     store_manager.ui \

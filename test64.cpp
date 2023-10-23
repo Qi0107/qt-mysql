@@ -1,3 +1,4 @@
+
 #include "test64.h"
 #include "ui_test64.h"
 #include <QPushButton>
@@ -6,10 +7,9 @@ test64::test64(QWidget *parent)
     , ui(new Ui::test64)
 {
     ui->setupUi(this);
-    qDebug()<<QSqlDatabase::drivers();
     //创建一个表
     QSqlQuery query;
-    //query.exec("create table corporation(id int primary key,username varchar(20),umargin int not null)");
+
     QString sqlcreate=QString("create table corporation(id int primary key,"
                               "username varchar(20),"
                               "margin int);");
@@ -17,7 +17,6 @@ test64::test64(QWidget *parent)
     //配置表格参数
     ui->tableWidget->setRowCount(10);//行
     ui->tableWidget->setColumnCount(3);//列
-    ui->tableWidget->setHorizontalHeaderLabels(QStringList()<<"id"<<"name"<<"margin");
     connect(ui->bt_shuaxin,&QPushButton::clicked,this,&test64::on_bt_shuaxin_clicked);
     connect(ui->bt_ruku,&QPushButton::clicked,this,&test64::insertdata);
     connect(ui->bt_chuku,&QPushButton::clicked,this,&test64::reduce);

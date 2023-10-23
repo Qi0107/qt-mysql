@@ -9,5 +9,7 @@
         <file>images/userlogo.jpg</file>
         <file>images/userlogo2.png</file>
         <file>images/white.jpg</file>
+        <file>images/7.jpg</file>
+        <file>images/warnning.png</file>
     </qresource>
 </RCC>

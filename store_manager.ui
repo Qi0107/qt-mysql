@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>系统登陆验证</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="login.qrc">
+    <normaloff>:/images/6.png</normaloff>:/images/6.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-image: url(:/images/1.jpg);</string>
   </property>
@@ -198,6 +202,8 @@ color: rgb(255, 255, 255);border: 1px white;</string>
    <zorder>comboBox</zorder>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="login.qrc"/>
+ </resources>
  <connections/>
 </ui>
